@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { withRouter } from 'react-router-dom'
 import {connect} from 'react-redux'
-import {updateUser} from './../../redux/userReducer'
+// import {updateUser} from './../../redux/userReducer'
 import 'reset-css'
 import {Link} from 'react-router-dom'
 
@@ -14,7 +14,7 @@ import {
     FormTitle,
     FormInput,
     FormBtn
-  } from '../AppStylesMany';
+  } from './AppStylesAuth';
 
 class LoginForm extends React.Component {
     constructor() {
@@ -76,4 +76,5 @@ class LoginForm extends React.Component {
     }
 }
 
-export default withRouter(connect(null, {updateUser}) (LoginForm))
+export default withRouter(connect(null, ) (LoginForm))
+// {updateUser}

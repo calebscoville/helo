@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { withRouter } from 'react-router-dom'
 import {connect} from 'react-redux'
-import {updateUser} from './../../redux/userReducer'
+// import {updateUser} from './../../redux/userReducer'
 import 'reset-css'
 import {Link} from 'react-router-dom'
 
-// import {
-//     AppContainer,
-//     FormContainer,
-//     Image,
-//     FormHeader,
-//     FormTitle,
-//     FormInput,
-//     FormBtn
-//   } from '../AppStylesMany';
+import {
+    AppContainer,
+    FormContainer,
+    Image,
+    FormHeader,
+    FormTitle,
+    FormInput,
+    FormBtn
+  } from './AppStylesAuth';
 
 class RegisterForm extends React.Component {
     constructor() {
@@ -145,4 +145,6 @@ class RegisterForm extends React.Component {
 
 
 
-export default withRouter(connect(null, {updateUser}) (RegisterForm))
+export default withRouter(connect(null, ) (RegisterForm))
+
+// {updateUser}
